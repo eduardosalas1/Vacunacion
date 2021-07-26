@@ -7,7 +7,7 @@ public class CentroVacuna{
     String nombre;
     Integer estado = 0;
 
-    List<Personas> listaPersonas = new ArrayList();
+    List<Personas> listaPersonas;
 
 
     public CentroVacuna(String nombre, Integer estado){
@@ -21,6 +21,8 @@ public class CentroVacuna{
 
             this.estado = 0;
         }
+
+        this.listaPersonas = new ArrayList();
 
     }
 

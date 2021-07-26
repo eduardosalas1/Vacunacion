@@ -6,10 +6,10 @@ import java.util.*;
 public class CentroVacunaController{
 
 
-    List<CentroVacuna> Centros = new ArrayList();
+    List<CentroVacuna> Centros ;
 
     public CentroVacunaController(){
-        //Constructor por defecto
+        Centros = new ArrayList();
     }
 
     public void addCentro(CentroVacuna centro){
