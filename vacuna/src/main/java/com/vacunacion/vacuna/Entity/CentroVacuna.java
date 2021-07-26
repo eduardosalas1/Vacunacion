@@ -41,7 +41,7 @@ public class CentroVacuna{
     }
 
     public void addPersona(Personas persona){
-        persona.EstaVacunado();
+        persona.estaVacunado();
         listaPersonas.add(persona);
     }
 

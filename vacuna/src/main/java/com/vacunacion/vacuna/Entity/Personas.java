@@ -13,7 +13,7 @@ public class Personas{
 
     }
 
-    public void EstaVacunado(){
+    public void estaVacunado(){
         this.vacunado = true;
     }
 

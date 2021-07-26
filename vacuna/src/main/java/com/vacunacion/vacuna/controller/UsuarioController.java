@@ -1,4 +1,4 @@
-package com.vacunacion.vacuna.Controller;
+package com.vacunacion.vacuna.controller;
 
 
 import com.vacunacion.vacuna.Entity.CentroVacuna;
@@ -11,7 +11,9 @@ public class UsuarioController{
     CentroVacunaController centroVacunaController;
 
 
-    public UsuarioController(){}
+    public UsuarioController(){
+        //Constructor por defecto
+    }
 
     public void darAlta(String nombre){
 
@@ -25,8 +27,8 @@ public class UsuarioController{
 
     }
 
-    public Integer Cobertura(){
-        return centroVacunaController.Cobertura();
+    public Integer coberturaVacunados(){
+        return centroVacunaController.coberturaVacunados();
     }
 
 

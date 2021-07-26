@@ -8,6 +8,7 @@ public class Usuario{
 
 
     public Usuario() {
+        //Constructor por defecto
     }
 
     public Usuario(String username , String password){
@@ -27,11 +28,5 @@ public class Usuario{
         return password;
     }
 
-    public void setPassword(String username) {
-        String invertida = "";
-        for (int i = username.length() - 1; i >= 0; i--) {
-            invertida += username.charAt(i);
-        }
-        this.password = invertida;
-    }
+
 }

@@ -1,0 +1,33 @@
+package com.vacunacion.vacuna.controller;
+
+public class LoginController{
+
+    public LoginController(){
+        //por defecto
+    }
+
+    public void iniciarSesion() {
+
+        Scanner sc = new Scanner(System.in);
+        logger.info("Loggearse");
+        logger.info("Username: ");
+        String usuario = sc.nextLine();
+        logger.info("Password: ");
+        String pass = sc.nextLine();
+        if(pass == password(usuario))
+            logger.info("Contraseña correcta");
+        else
+            logger.info("Conseña incorrecta");
+
+    }
+    public String password(String username){
+        String invertida = "";
+        for (int i = username.length() - 1; i >= 0; i--) {
+            invertida += username.charAt(i);
+        }
+        this.password = invertida;
+    }
+    }
+
+
+}

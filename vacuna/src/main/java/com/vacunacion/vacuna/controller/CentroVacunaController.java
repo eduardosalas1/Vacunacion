@@ -1,21 +1,16 @@
-package com.vacunacion.vacuna.Controller;
+package com.vacunacion.vacuna.controller;
 
 import com.vacunacion.vacuna.Entity.CentroVacuna;
 import java.util.*;
 
 public class CentroVacunaController{
 
-    Integer OchentaMas = 647355;
-    Integer SetentaAsetentaNueve = 1271842;
-    Integer SesentaAsesentaNueve = 2221241;
-    Integer CincuentaAcincuentaNueve = 3277134;
-    Integer CuarentaCuarentanueve = 4183174;
-    Integer TreintaTreintaNueve = 5031117;
-    Integer DieciochoVeinteNueve = 6303670;
 
     List<CentroVacuna> Centros = new ArrayList();
 
-    public CentroVacunaController(){}
+    public CentroVacunaController(){
+        //Constructor por defecto
+    }
 
     public void addCentro(CentroVacuna centro){
         this.Centros.add(centro);
@@ -38,10 +33,8 @@ public class CentroVacunaController{
         return this.Centros;
     }
 
-    public Integer Cobertura(){
-        Integer numero = (numPersVacunadas()/22935533)*100;
-
-        return numero;
+    public Integer coberturaVacunados(){
+        return (numPersVacunadas()/22935533)*100;
     }
 }
 
